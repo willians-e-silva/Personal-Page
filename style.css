@@ -1,0 +1,256 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --border-color: #00FF00;
+    --box-shadow: #1011107c;
+    --javascript: #f9f100d2;
+
+    --main-font: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--body-bg-color);
+    display: flex;
+}
+
+.mainCard{
+    background-color: var(--bg-cards);
+    border-radius: 15px;
+    box-shadow: 3px 3px var(--box-shadow);
+    margin-bottom: 30px;
+}
+
+aside{
+    width: 348px;
+    margin-left: 40px;
+}
+
+main{
+    width: 100%;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+/* Titles */
+.titleText{
+    font: 600 22px var(--main-font);
+    color: var(--text-color);
+    padding-top: 20px;
+    padding-left: 32px;
+}
+
+/* Profile cards */
+#profileCard{
+    display: grid;
+    padding-top: 20px;
+}
+
+#profileCard > img{
+    height: 122px;
+    width: 122px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--border-color);
+    
+}
+#profileCard > h1{
+    padding-top: 20px;
+    font: 600 26px var(--main-font);
+    color: var(--text-color);
+
+}
+#profileCard > h2{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font: 100 17px var(--main-font);
+    color: var(--text-color);
+}
+
+.profileItem{
+    margin: auto;
+}
+
+/* LISTS */
+.mainCard > ul{
+    list-style: none;
+    padding-left: 15px;
+}
+.infoList{
+    color: var(--text-color);
+    font: 400 16px var(--main-font);
+}
+
+.infoList > a{
+    text-decoration: none;
+    color: var(--text-color);
+    
+}
+.infoIcon{
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    /* change icon color from black to purple */
+    filter: invert(58%) sepia(13%) saturate(650%) hue-rotate(209deg) brightness(86%) contrast(88%);
+}
+
+/* Techonologies card */
+.technologies{
+    background-color: var(--bg-techs);
+    font: 400 16px var(--main-font);
+    width: 100px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 10px;
+}
+.tecContainer{
+    display: flex;
+    padding-right: 10px;
+}
+/* EDUCATIONCARD */
+#educationCard{
+    height: 240px;
+}
+/* EXPERIENCECARD */
+#experienceCard{
+    height: 240px;
+}
+/* EDUCATION AND EXPERIENCE TEXT */
+.eduExp{
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+.eduExp>li{
+    font: 700 16px var(--main-font);
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.eduExp>p{
+    font: 400 16px var(--main-font);
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+.eduExp>span{
+    font: 600 16px var(--main-font);
+    margin-left: 30px;
+}
+
+/* PROJECTS */
+.mainTitle{
+    font: 700 20px var(--main-font);
+    color: var(--text-color);
+    padding: 30px;
+}
+#projects{
+    display: flex;
+}
+.projectCard{
+    width: 90%;
+    background-color: var(--bg-cards);
+    border-radius: 15px;
+    box-shadow: 3px 3px var(--box-shadow);
+    margin-bottom: 15px;
+}
+#projectMargin{
+    margin-left: 3%;
+}
+
+.projectTitle{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.icon{
+    filter: invert(58%) sepia(13%) saturate(650%) hue-rotate(209deg) brightness(86%) contrast(88%);
+}
+.projectTitle>p{
+    font: 700 16px var(--main-font);
+    color: var(--text-color);
+    margin-left: 10px;
+}
+.projectCard > p{
+    margin-left: 20px;
+    font: 400 16px var(--main-font);
+    color: var(--text-color);
+}
+.gitInfo{
+    display: flex;
+    font: 700 16px var(--main-font);
+    color: var(--text-color);
+
+}
+.gitInfo>img{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.gitContainer{
+    display: flex;
+    margin-left: 10px;
+}
+.gitTec{
+    margin-left: auto;
+    margin-right: 5%;
+    align-items: center;
+    display: flex;
+}
+.gitTec>p{
+    font: 600 16px var(--main-font);
+    color: var(--text-color);
+}
+.dot{
+    height: 12px;
+    width: 12px;
+    background-color: var(--javascript);
+    border-radius: 50%;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: var(--text-color);
+}
+
+/* RECENT POST */
+#postCard{
+    height: 16%;
+}
+.postContainer{
+    display: flex;
+}
+.postPic{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: 122px;
+    width: 122px;
+    border-radius: 50%;
+    border-style: solid;
+}
+.postGrid{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.date{
+    margin-left: 12px;
+    font: 400 16px var(--main-font);
+    color: var(--text-color);
+}
+.desc{
+    /* margin-top: 2px; */
+    margin-left: 12px;
+    font: 600 16px var(--main-font);
+    color: var(--text-color);
+}
+.postTitle{
+    margin-left: 12px;
+    font: 700 20px var(--main-font);
+    color: var(--text-color);
+}
+.postTags{
+    display:flex;
+}
+.postList{
+    margin-left: 10px;
+    list-style: none;
+    font: 600 14px var(--main-font);
+    color: var(--text-color);
+}
