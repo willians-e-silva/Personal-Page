@@ -1,7 +1,6 @@
 function init(){
     var myHeaders = new Headers({
         'Accept':'application/vnd.github.v3+json',
-        'Authorization':'Bearer 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'
     });
     var headers = { method: 'GET',
                headers: myHeaders,
