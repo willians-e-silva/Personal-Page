@@ -88,11 +88,17 @@ main{
     
 }
 .infoIcon{
+    display: grid;
+    margin-top: 25% ;
+    margin-bottom: 15%;
     padding-right: 10px;
-    padding-top: 5px;
+    /* padding-top: 12%; */
     padding-left: 10px;
     /* change icon color from black to purple */
     filter: invert(58%) sepia(13%) saturate(650%) hue-rotate(209deg) brightness(86%) contrast(88%);
+}
+#informationCard{
+    display: flex;
 }
 
 /* Techonologies card */

@@ -16,19 +16,26 @@
 <body>
     <aside id="sideCards">
         <div class="mainCard" id="profileCard">
-            <img class="profileItem" src="./assets/images/profilePicture.jpg" alt="">
+            <img class="profileItem" id="profilePic" src="./assets/images/profilePicture.jpg" alt="">
             <h1 class="profileItem">Willians Eduardo da Silva</h1>
             <h2 class="profileItem">Dev Full Stack Jr.</h2>    
         </div>
 
         <div class="mainCard" id="informationCard">
-            <ul>
-                <li class="infoList"><img src="./assets/icons/map-pin.svg" alt="" class="infoIcon">Brasil / SC</li>
-                <li class="infoList"><img src="./assets/icons/briefcase.svg" alt="" class="infoIcon">Cianet</li>
-                <li class="infoList"><img src="./assets/icons/github.svg" alt="" class="infoIcon"><a href="https://github.com/GoldenTlmeLover">GitHub</a></li>
-                <li class="infoList"><img src="./assets/icons/linkedin.svg" alt="" class="infoIcon"><a href="https://www.linkedin.com/in/willians-silva-b62a23211">Willians Silva</a></li>
-                <li class="infoList"><img src="./assets/icons/mail.svg" alt="" class="infoIcon"><a href="Willians.silva9620@gmail.com">Email</a></li>
-            </ul>
+            <div class="icons">
+                <img src="./assets/icons/map-pin.svg" alt="" class="infoIcon" id="location">
+                <img src="./assets/icons/briefcase.svg" alt="" class="infoIcon">
+                <img src="./assets/icons/github.svg" alt="" class="infoIcon">
+                <img src="./assets/icons/linkedin.svg" alt="" class="infoIcon">
+                <img src="./assets/icons/mail.svg" alt="" class="infoIcon">
+            </div>
+            <div>
+                <p class="infoList">Brasil / SC</p>
+                <p class="infoList">Cianet</p>
+                <p class="infoList"><a href="https://github.com/GoldenTlmeLover">GitHub</a></p>
+                <p class="infoList"><a href="https://www.linkedin.com/in/willians-silva-b62a23211">Willians E. Silva</a></p>
+                <p class="infoList"><a href="Willians.silva9620@gmail.com">Email</a></p>
+            </div>
         </div>
 
         <div class="mainCard" id="tecCard">
@@ -131,7 +138,7 @@
     </div>
     <div class="mainCard" id="postCard">
         <div class="postContainer">
-            <img src="assets/images/profilePicture.jpg" alt="" class="postPic">
+            <img src="assets/images/profilePicture.jpg" alt="" class="postPic" id="postPic">
             <div class="postGrid">
                 <span class="postTitle">post muito bacana</span>
                 <p class="date">2 years ago</p>
@@ -148,4 +155,5 @@
     </div>
 </main>
 </body>
+<script src="./index.js"></script>
 </html>
